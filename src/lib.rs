@@ -13,8 +13,6 @@ pub struct TraansactionConfig {
     pub nonce: U256,
 }
 
-use primitive_types::U256;
-
 pub struct EvmResult {
     pub stack: Vec<U256>,
     pub success: bool,
