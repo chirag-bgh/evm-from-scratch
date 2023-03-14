@@ -30,6 +30,10 @@ pub fn evm(_code: impl AsRef<[u8]>) -> EvmResult {
 
         if opcode == 0x00 {
             // STOP
+            return EvmResult {
+                stack: stack,
+                success: true,
+            };
         }
     }
 
